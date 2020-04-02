@@ -1,34 +1,37 @@
 package practica;
 
-public class Desierto{
+public class TipoPlanta extends Fitocenosis {
 
-    public String nombre;
-    public String tipo;
-
-    public Desierto(String nombre, String tipo) {
-        this.tipo=tipo;
+    public TipoPlanta(String nombre,String tipo){
+        super(nombre,tipo);
         this.nombre=nombre;
+        this.tipo=tipo;
+
     }
 
+    @Override
     public String getNombre() {
-        return nombre;
+        return super.getNombre();
     }
 
+    @Override
     public void setNombre(String nombre) {
-        this.nombre = nombre;
+        super.setNombre(nombre);
     }
 
+    @Override
     public String getTipo() {
-        return tipo;
+        return super.getTipo();
     }
 
+    @Override
     public void setTipo(String tipo) {
-        this.tipo = tipo;
+        super.setTipo(tipo);
     }
 
     @Override
     public String toString() {
-        return "Desierto{" +
+        return "TipoPlanta{" +
                 "nombre='" + nombre + '\'' +
                 ", tipo='" + tipo + '\'' +
                 '}';

@@ -21,4 +21,8 @@ class BiotopoTest {
     @Test
     void setTipo() {
     }
+
+    @Test
+    void testToString() {
+    }
 }

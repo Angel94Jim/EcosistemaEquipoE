@@ -1,39 +1,38 @@
 package practica;
 
-public class Zoocenosis extends Biocenosis {
+public class TipoAnimal extends Zoocenosis {
 
-    public String nombre;
-    public String tipo;
-
-    public Zoocenosis(String nombre, String tipo) {
+    public TipoAnimal(String nombre,String tipo){
         super(nombre,tipo);
-        this.nombre=nombre;
         this.tipo=tipo;
+        this.nombre=nombre;
+
     }
+
 
     @Override
     public String getNombre() {
-        return nombre;
+        return super.getNombre();
     }
 
     @Override
     public void setNombre(String nombre) {
-        this.nombre = nombre;
+        super.setNombre(nombre);
     }
 
     @Override
     public String getTipo() {
-        return tipo;
+        return super.getTipo();
     }
 
     @Override
     public void setTipo(String tipo) {
-        this.tipo = tipo;
+        super.setTipo(tipo);
     }
 
     @Override
     public String toString() {
-        return "Zoocenosis{" +
+        return "TipoAnimal{" +
                 "nombre='" + nombre + '\'' +
                 ", tipo='" + tipo + '\'' +
                 '}';

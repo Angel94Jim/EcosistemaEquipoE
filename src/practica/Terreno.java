@@ -1,35 +1,38 @@
 package practica;
 
-public class Oceano{
+public class Terreno extends TipoBiotopo {
 
-    public String nombre;
-    public String tipo;
+    public Terreno(String nombre,String tipo){
+        super(nombre,tipo);
 
-    public Oceano(String nombre, String tipo) {
         this.tipo=tipo;
         this.nombre=nombre;
 
     }
 
+    @Override
     public String getNombre() {
-        return nombre;
+        return super.getNombre();
     }
 
+    @Override
     public void setNombre(String nombre) {
-        this.nombre = nombre;
+        super.setNombre(nombre);
     }
 
+    @Override
     public String getTipo() {
-        return tipo;
+        return super.getTipo();
     }
 
+    @Override
     public void setTipo(String tipo) {
-        this.tipo = tipo;
+        super.setTipo(tipo);
     }
 
     @Override
     public String toString() {
-        return "Oceano{" +
+        return "Terreno{" +
                 "nombre='" + nombre + '\'' +
                 ", tipo='" + tipo + '\'' +
                 '}';

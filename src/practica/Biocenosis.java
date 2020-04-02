@@ -7,15 +7,6 @@ public class Biocenosis extends Ecosistema {
 
     public Biocenosis(String nombre,String tipo){
 
-
-        Zoocenosis zoocenosis=new Zoocenosis("Tigre","Bengala");
-        Fitocenosis fitocenosis= new Fitocenosis("Seta","Champ");
-
-        System.out.println("BIOCENOSIS");
-        System.out.println(zoocenosis.toString());
-        System.out.println(fitocenosis.toString());
-        System.out.println("\n");
-
         this.nombre=nombre;
         this.tipo=tipo;
     }
@@ -34,5 +25,13 @@ public class Biocenosis extends Ecosistema {
 
     public void setTipo(String tipo) {
         this.tipo = tipo;
+    }
+
+    @Override
+    public String toString() {
+        return "Biocenosis{" +
+                "nombre='" + nombre + '\'' +
+                ", tipo='" + tipo + '\'' +
+                '}';
     }
 }

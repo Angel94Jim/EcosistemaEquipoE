@@ -1,30 +1,32 @@
 package practica;
 
-public class Fitocenosis{
-
-    public String nombre;
-    public String tipo;
+public class Fitocenosis extends Biocenosis{
 
     public Fitocenosis(String nombre, String tipo) {
-        this.tipo=tipo;
+        super(nombre,tipo);
         this.nombre=nombre;
+        this.tipo=tipo;
 
     }
 
+    @Override
     public String getNombre() {
-        return nombre;
+        return super.getNombre();
     }
 
+    @Override
     public void setNombre(String nombre) {
-        this.nombre = nombre;
+        super.setNombre(nombre);
     }
 
+    @Override
     public String getTipo() {
-        return tipo;
+        return super.getTipo();
     }
 
+    @Override
     public void setTipo(String tipo) {
-        this.tipo = tipo;
+        super.setTipo(tipo);
     }
 
     @Override
